@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AudioToTranscript")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f5ebfcd05c6834862a259f75b6172451e9f10e7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+baaf63cdef6b86d2a81b0e4755f09b269eb380a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("AudioToTranscript")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AudioToTranscript")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

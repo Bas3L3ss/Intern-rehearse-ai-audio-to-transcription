@@ -42,3 +42,4 @@ venv/
 *.sqlite3
 *.ipynb_checkpoints
 AudioToTranscript/appsettings.json
+temp_chunks/**

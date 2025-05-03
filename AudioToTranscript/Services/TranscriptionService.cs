@@ -176,7 +176,7 @@ public class TranscriptionService : ITranscriptionService
     /// <summary>
     /// Builds command-line arguments for the Whisper script based on the request options
     /// </summary>
-    private string BuildWhisperArguments(TranscriptionRequest request)
+    private static string BuildWhisperArguments(TranscriptionRequest request)
     {
         var args = new List<string>();
         

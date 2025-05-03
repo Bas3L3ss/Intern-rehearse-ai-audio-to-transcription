@@ -198,7 +198,7 @@ def main():
         sys.stdout.reconfigure(line_buffering=True)
     
     # Process each chunk and stream results
-    print("WEBVTT\n")
+    print("WEBVTT\n", file=sys.stderr)
     
     try:
         for i, (chunk_file, start_time) in enumerate(zip(chunk_files, start_times)):
@@ -234,3 +234,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+ 

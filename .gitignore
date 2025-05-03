@@ -1,1 +1,44 @@
 whisper-env
+# General
+node_modules/
+dist/
+.env
+*.log
+.DS_Store
+
+# ReactJS (Vite)
+.vite/
+.vscode/
+*.env.local
+*.env.development.local
+*.env.production.local
+
+# .NET ASP Core
+bin/
+obj/
+*.user
+*.suo
+*.swp
+*.db
+*.sqlite
+*.sqlite3
+*.pdb
+*.cache/
+*.vs/
+appsettings*.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.venv
+env/
+venv/
+.idea/
+.mypy_cache/
+.pytest_cache/
+*.sqlite3
+*.ipynb_checkpoints
+AudioToTranscript/appsettings.json

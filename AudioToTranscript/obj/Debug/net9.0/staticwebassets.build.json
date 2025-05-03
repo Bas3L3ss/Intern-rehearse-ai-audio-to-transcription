@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "oxehQLbsxmsLdFB/qgVkpSXRgtB3k3VyT/JVTXuSjvg=",
+  "Source": "AudioToTranscript",
+  "BasePath": "_content/AudioToTranscript",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "uYDY0jFJnsI=",
+  "success": true,
+  "projectFilePath": "/home/phamthienhung/Desktop/software-life/projects/fun project/intern-rehearse/AudioToTranscript/AudioToTranscript.csproj",
+  "expectedPackageFiles": [
+    "/home/phamthienhung/.nuget/packages/microsoft.aspnetcore.openapi/9.0.4/microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",
+    "/home/phamthienhung/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

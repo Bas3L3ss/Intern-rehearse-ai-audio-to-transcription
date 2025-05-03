@@ -1,0 +1,58 @@
+@baseUrl = http://localhost:5108
+
+### Test 1: Upload and Transcribe Audio File
+# This test sends a simple POST request to the upload endpoint with an audio file
+POST {{baseUrl}}/api/Transcription/upload
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="test.mp3"
+Content-Type: audio/mpeg
+
+< ./test.mp3
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+### Test 2: Bad Request - No File
+# Tests that proper error is returned when no file is provided
+POST {{baseUrl}}/api/Transcription/upload
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+### Test 3: Transcribe with Options
+# Tests the endpoint that accepts additional transcription options
+POST {{baseUrl}}/api/Transcription/transcribe
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="AudioFile"; filename="test.mp3"
+Content-Type: audio/mpeg
+
+< ./test.mp3
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="Language"
+
+en
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+### Test 4: Bad Request - Transcribe with No Audio File
+# Tests that proper error is returned when no audio file is provided in the transcribe endpoint
+POST {{baseUrl}}/api/Transcription/transcribe
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="Language"
+
+en-US
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+### Test 5: Transcribe with only mandatory fields
+POST {{baseUrl}}/api/Transcription/transcribe
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="AudioFile"; filename="sample-audio.wav"
+Content-Type: audio/wav
+
+< ./sample-audio.wav
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
